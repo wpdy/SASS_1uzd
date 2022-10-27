@@ -1,0 +1,21 @@
+@import 'var', 'mixins';
+
+.container{
+    height: 100vh;
+    @include myCenter();
+    flex-wrap: wrap;
+    gap: 50px;
+
+    img{
+        @include myCustomHeight(500px,400px);
+        object-fit:cover;
+
+        border-radius: $customBorder;
+        @include myCustomFilter(50%);
+
+        &:hover{
+            @include myCustomFilter(110%);
+        }
+
+    }
+}

@@ -1,0 +1,21 @@
+@mixin myCustomFilter($pr) {
+    filter: brightness($pr);
+}
+
+@mixin myCustomHeight($pr, $px) {
+    height: $px;
+    width: $pr;
+}
+
+
+// @mixin myCenter($pr, $pb, $pl) {
+//     display: $pr;
+//     justify-content: $pb;
+//     align-items: $pl;
+// }
+
+@mixin myCenter() {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
