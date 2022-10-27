@@ -1,21 +1,23 @@
 @import 'var', 'mixins';
 
 .container{
-    height: 100vh;
-    @include myCenter();
-    flex-wrap: wrap;
-    gap: 50px;
+    height: $customVWheight;
+    background-color: $customColor;
 
-    img{
-        @include myCustomHeight(500px,400px);
-        object-fit:cover;
+    .pirm {
+        @include pirmasAnimation()
+      }
 
-        border-radius: $customBorder;
-        @include myCustomFilter(50%);
+    .antr {
+        @include antrasAnimation()
+      }
 
-        &:hover{
-            @include myCustomFilter(110%);
-        }
+      .item {
+        @include treciasAnimation()
+      }
 
-    }
+      h1 {
+          font-size: 150px;
+          animation-name: trecias;
+      }
 }

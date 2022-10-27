@@ -1,31 +1,130 @@
 .container {
   height: 100vh;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
-  gap: 50px;
+  background-color: RGB(158 255 202);
 }
 
-.container img {
+.container .pirm {
+  width: 200px;
+  height: 200px;
+  -webkit-animation-name: pirmas;
+          animation-name: pirmas;
+  -webkit-animation-duration: 4s;
+          animation-duration: 4s;
+  position: absolute;
+}
+
+@-webkit-keyframes pirmas {
+  0% {
+    left: 0px;
+    top: 0px;
+    -webkit-transform: rotate(0deg);
+            transform: rotate(0deg);
+  }
+  100% {
+    left: 200px;
+    top: 0px;
+    -webkit-transform: rotate(360deg);
+            transform: rotate(360deg);
+  }
+}
+
+@keyframes pirmas {
+  0% {
+    left: 0px;
+    top: 0px;
+    -webkit-transform: rotate(0deg);
+            transform: rotate(0deg);
+  }
+  100% {
+    left: 200px;
+    top: 0px;
+    -webkit-transform: rotate(360deg);
+            transform: rotate(360deg);
+  }
+}
+
+.container .antr {
+  width: 400px;
   height: 400px;
-  width: 500px;
-  -o-object-fit: cover;
-     object-fit: cover;
-  border-radius: 5%;
-  -webkit-filter: brightness(50%);
-          filter: brightness(50%);
+  -webkit-animation-name: antras;
+          animation-name: antras;
+  -webkit-animation-duration: 4s;
+          animation-duration: 4s;
+  position: absolute;
+  bottom: 0px;
+  left: 800px;
 }
 
-.container img:hover {
-  -webkit-filter: brightness(110%);
-          filter: brightness(110%);
+@-webkit-keyframes antras {
+  0% {
+    bottom: 0px;
+    left: 800px;
+  }
+  100% {
+    bottom: 900px;
+    left: 1500px;
+  }
+}
+
+@keyframes antras {
+  0% {
+    bottom: 0px;
+    left: 800px;
+  }
+  100% {
+    bottom: 900px;
+    left: 1500px;
+  }
+}
+
+.container .item {
+  -webkit-animation-name: trecias;
+          animation-name: trecias;
+  -webkit-animation-duration: 4s;
+          animation-duration: 4s;
+  position: absolute;
+  top: 0px;
+  left: 600px;
+  font-size: 100px;
+}
+
+@-webkit-keyframes trecias {
+  0% {
+    top: 0px;
+    left: 600px;
+    -webkit-transform: rotate(0deg);
+            transform: rotate(0deg);
+    color: black;
+  }
+  100% {
+    top: 500px;
+    left: 600px;
+    -webkit-transform: rotate(360deg);
+            transform: rotate(360deg);
+    color: #ff009d;
+  }
+}
+
+@keyframes trecias {
+  0% {
+    top: 0px;
+    left: 600px;
+    -webkit-transform: rotate(0deg);
+            transform: rotate(0deg);
+    color: black;
+  }
+  100% {
+    top: 500px;
+    left: 600px;
+    -webkit-transform: rotate(360deg);
+            transform: rotate(360deg);
+    color: #ff009d;
+  }
+}
+
+.container h1 {
+  font-size: 150px;
+  -webkit-animation-name: trecias;
+          animation-name: trecias;
 }
 /*# sourceMappingURL=main.css.map */
